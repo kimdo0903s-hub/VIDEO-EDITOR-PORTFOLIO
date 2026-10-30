@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FRAME | Video Editor Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#hero" class="logo">FRAME</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">WORKS</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 메인 -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-name">KIM DO KYUNG</p>
+          <h1>VIDEO EDITOR <span class="gradient-text">PORTFOLIO</span></h1>
+          <p class="hero-tagline">편집으로 완성하고, 감각으로 전달하다.</p>
+          <a href="#portfolio" class="btn btn-primary">VIEW MY WORK</a>
+        </div>
+        <div class="hero-visual">
+          <!-- 대표 영상 썸네일: assets/images/hero.jpg 로 교체하세요 -->
+          <img src="assets/images/hero.jpg" alt="대표 작품 썸네일">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-inner">
+        <h2 class="section-title">About Me</h2>
+        <!-- 예시 문구: 실제 소개로 수정하세요 -->
+        <p class="about-text">여기에 자기소개를 작성하세요. 어떤 영상을 좋아하고, 어떤 편집자가 되고 싶은지 적어 주세요.</p>
+      </div>
+    </section>
+
+    <!-- 작품 갤러리 -->
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <h2>SELECTED <span>WORKS</span></h2>
+        <p class="section-description">
+          김도경의 영상 제작 및 편집 작품을 소개합니다.
+        </p>
+
+        <h3 class="works-group-title">영상 편집</h3>
+        <div class="portfolio-grid">
+        <!-- 영상 카드: data-video = 영상 경로, data-title = 제목 -->
+          <button class="portfolio-card" type="button" data-video="assets/videos/급훈이 뭐라고.mp4" data-title="급훈이 뭐라고">
+            <div class="thumbnail">
+              <img src="assets/images/work1.jpg" alt="급훈이 뭐라고 작품 썸네일">
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>급훈이 뭐라고</h3>
+              <p>VIDEO EDITING</p>
+            </div>
+          </button>
+          <button class="portfolio-card" type="button" data-video="assets/videos/당신의 나이키 가방.mp4" data-title="당신의 나이키 가방">
+            <div class="thumbnail">
+              <img src="assets/images/work2.jpg" alt="당신의 나이키 가방 작품 썸네일">
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>당신의 나이키 가방</h3>
+              <p>VIDEO EDITING</p>
+            </div>
+          </button>
+          <button class="portfolio-card" type="button" data-video="assets/videos/자동차광고.mp4" data-title="자동차 광고">
+            <div class="thumbnail">
+              <img src="assets/images/work3.jpg" alt="자동차 광고 작품 썸네일">
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>자동차 광고</h3>
+              <p>VIDEO EDITING</p>
+            </div>
+          </button>
+          <button class="portfolio-card" type="button" data-video="assets/videos/떨리는 새학기.mp4" data-title="떨리는 새학기">
+            <div class="thumbnail">
+              <img src="assets/images/work4.jpg" alt="떨리는 새학기 작품 썸네일">
+              <span class="play-icon" aria-hidden="true">▶</span>
+            </div>
+            <div class="project-info">
+              <h3>떨리는 새학기</h3>
+              <p>VIDEO EDITING</p>
+            </div>
+          </button>
+        </div>
+
+        <h3 class="works-group-title">포스터 디자인</h3>
+        <div class="portfolio-grid poster-grid">
+        <!-- 포스터 카드: data-image = 이미지 경로, data-title = 제목, data-desc = 설명 -->
+          <button class="portfolio-card" type="button" data-image="assets/images/poster1.jpg" data-title="제11회 영상제 포스터" data-desc="제11회 영상제를 홍보하기 위해 제작한 포스터">
+            <div class="thumbnail">
+              <img src="assets/images/poster1.jpg" alt="제11회 영상제 포스터">
+            </div>
+            <div class="project-info">
+              <h3>제11회 영상제 포스터</h3>
+              <p>POSTER DESIGN</p>
+            </div>
+          </button>
+          <button class="portfolio-card" type="button" data-image="assets/images/poster2.jpg" data-title="클롬모션 2: 엘리리언스" data-desc="작품의 분위기와 캐릭터를 활용해 제작한 포스터">
+            <div class="thumbnail">
+              <img src="assets/images/poster2.jpg" alt="클롬모션 2: 엘리리언스">
+            </div>
+            <div class="project-info">
+              <h3>클롬모션 2: 엘리리언스</h3>
+              <p>POSTER DESIGN</p>
+            </div>
+          </button>
+          <button class="portfolio-card" type="button" data-image="assets/images/poster3.jpg" data-title="스케치 코미디 포스터">
+            <div class="thumbnail">
+              <img src="assets/images/poster3.jpg" alt="스케치 코미디 포스터">
+            </div>
+            <div class="project-info">
+              <h3>스케치 코미디 포스터</h3>
+              <p>POSTER DESIGN</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card skill-purple">
+            <h3>Premiere Pro</h3>
+            <p>컷 편집, 자막, 색 보정, 오디오 정리</p>
+          </article>
+          <article class="skill-card skill-blue">
+            <h3>After Effects</h3>
+            <p>모션 그래픽, 타이틀, 간단한 이펙트</p>
+          </article>
+          <article class="skill-card skill-blue">
+            <h3>Photoshop</h3>
+            <p>포스터 제작, 썸네일 디자인, 이미지 보정</p>
+          </article>
+          <article class="skill-card skill-purple">
+            <h3>Illustrator</h3>
+            <p>로고와 아이콘 제작, 벡터 그래픽 디자인</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW I WORK -->
+    <section class="section" id="process">
+      <div class="container">
+        <h2 class="section-title">How I Work</h2>
+        <div class="process-grid">
+          <article class="process-card"><span>1</span><h3>기획 파악</h3><p>영상의 목적과 대상을 확인합니다.</p></article>
+          <article class="process-card"><span>2</span><h3>컷 편집</h3><p>흐름에 맞춰 컷을 구성합니다.</p></article>
+          <article class="process-card"><span>3</span><h3>연출</h3><p>자막, 사운드, 효과를 더합니다.</p></article>
+          <article class="process-card"><span>4</span><h3>수정·완성</h3><p>피드백을 반영해 마무리합니다.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container contact-inner">
+        <h2 class="section-title">Contact</h2>
+        <p class="about-text">함께 일할 기회를 기다리고 있습니다.</p>
+        <!-- 본인 이메일로 수정하세요 -->
+        <a href="mailto:your-email@example.com" class="btn btn-primary">이메일 보내기</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container"><p>&copy; 2026 FRAME. All rights reserved.</p></div>
+  </footer>
+
+  <!-- 영상 팝업 -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="closeModal" type="button" aria-label="영상 창 닫기">×</button>
+
+      <h2 id="modalTitle">작품 제목</h2>
+
+      <video id="portfolioVideo" controls playsinline preload="none">
+        브라우저에서 영상을 재생할 수 없습니다.
+      </video>
+      <img id="portfolioImage" alt="" hidden>
+      <p id="modalDesc" hidden></p>
+
+      <p id="videoError" role="status" hidden>
+        영상을 불러오지 못했습니다. 파일 경로를 확인해 주세요.
+        <small id="videoErrorPath"></small>
+      </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
